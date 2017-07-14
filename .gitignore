@@ -1,0 +1,8 @@
+archtypes/
+content/
+data/
+layouts/
+static/
+themes/
+.netlify
+config.toml
