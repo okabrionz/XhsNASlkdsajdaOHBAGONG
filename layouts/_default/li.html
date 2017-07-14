@@ -1,0 +1,14 @@
+   <div class="post-preview mb3">
+   	<a href="{{ .Permalink }}">
+ 	{{ if .Params.image }}<img width="768px" class="rounded mx-auto d-block mb-3" src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
+    </a>
+   <h2 class="post-title text-center">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2><small class="post-meta">Read in {{ .ReadingTime }} minutes</small>
+    <p class="lead">
+        {{ .Description }}
+        <a href="{{ .Permalink }}">... Continue Reading</a>
+    </p>
+    <hr>
+    
+   </div>

@@ -1,0 +1,14 @@
+<div class="container">
+<div class="row">
+        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <h1 class="display-3 text-center mb-5">Latest Posts</h1>
+            <div class="post-preview">
+            	{{ range where .Data.Pages "Type" "post" }}
+					{{ .Render "li" }}
+				{{ end }}
+        </div>
+        <hr>
+        <a class="btn btn-primary text-right" href="/post">More Posts <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+    </div>
+</div>
+
